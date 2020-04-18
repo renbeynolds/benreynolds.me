@@ -12,6 +12,9 @@ module.exports = {
         'eslint:recommended',
         'plugin:react/recommended'
     ],
+    'parserOptions': {
+        'sourceType': 'module',
+    },
     'rules': {
         'indent': ['error', 2],
         'quotes': [
