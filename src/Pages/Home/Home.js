@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import GitHub from '../../Assets/Icons/github.svg';
 import Instagram from '../../Assets/Icons/instagram.svg';
 import Linkedin from '../../Assets/Icons/linkedin.svg';
@@ -38,7 +39,7 @@ function Home() {
       <div className='home__panel-wrap'>
         <div className='home__panel center-vertical'>
           <div className='center-horizontal'>
-            <div className='home__panel-title'>Kodenames</div>
+            <Link to='/kodenames'><div className='home__panel-title'>Kodenames</div></Link>
           </div>
           <div className='center-horizontal'>
             <div className='home__panel-subtitle'>Word association game where two teams compete to outwit one another with one-word clues.</div>

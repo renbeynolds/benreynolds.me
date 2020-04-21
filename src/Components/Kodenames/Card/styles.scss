@@ -1,0 +1,49 @@
+@import '../styles.scss';
+
+.card__cell {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #dedede;
+    font-size: 2.2vw;
+}
+
+.card__cell:hover {
+    background-color: #d1d1d1;
+}
+
+.card__cell.R.flipped {
+    background-color: $kodenames-red;
+}
+.card__cell.B.flipped {
+    background-color: $kodenames-blue;
+}
+.card__cell.Y.flipped {
+    background-color: $kodenames-yellow;
+}
+.card__cell.G.flipped {
+    background-color: $kodenames-gray;
+}
+.card__cell.R.spymaster {
+    background-color: $kodenames-red;
+}
+.card__cell.B.spymaster {
+    background-color: $kodenames-blue;
+}
+.card__cell.Y.spymaster {
+    background-color: $kodenames-yellow;
+}
+.card__cell.G.spymaster {
+    background-color: $kodenames-gray;
+}
+.card__cell.R.flipped.spymaster {
+    background-color: $kodenames-green;
+}
+.card__cell.B.flipped.spymaster {
+    background-color: $kodenames-green;
+}
+.card__cell.Y.flipped.spymaster {
+    background-color: $kodenames-green;
+}
+.card__cell.G.flipped.spymaster {
+    background-color: $kodenames-green;
+}
