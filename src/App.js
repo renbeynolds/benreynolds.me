@@ -2,7 +2,8 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './Pages/Home';
-import Kodenames from './Pages/Kodenames/Kodenames';
+import { Kodenames } from './Pages/Kodenames';
+import { Recipes } from './Pages/Recipes';
 import store from './Redux/store';
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
           </Route>
           <Route exact path='/kodenames'>
             <Kodenames />
+          </Route>
+          <Route exact path='/recipes'>
+            <Recipes />
           </Route>
         </Switch>
       </Router>

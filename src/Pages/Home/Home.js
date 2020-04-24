@@ -25,7 +25,7 @@ function Home() {
           Husband.<br/>
           Christian<br/>
           & Friend.
-          </div>
+        </div>
         <div className='home__sidebar-intro center-horizontal'>
           Software engineer at F9 Teams supporting the Air Force's Kessel Run program. Happily married to my incredible wife Veronika. Striving to live a faithful and full life.
         </div>
@@ -45,7 +45,13 @@ function Home() {
             <div className='home__panel-subtitle'>Word association game where two teams compete to outwit one another with one-word clues.</div>
           </div>
         </div>
-        <div className='home__panel'>
+        <div className='home__panel center-vertical'>
+          <div className='center-horizontal'>
+            <Link to='/recipes'><div className='home__panel-title'>Recipes</div></Link>
+          </div>
+          <div className='center-horizontal'>
+            <div className='home__panel-subtitle'>A collection of all of our favorite recipes.</div>
+          </div>
         </div>
         <div className='home__panel'>
         </div>

@@ -7,32 +7,32 @@ import './styles.scss';
 
 function Card(props) {
 
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-    const { word, color, flipped } = useSelector(state => state.kodenames.get('cards')[props.row][props.col]);
-    const spymaster = useSelector(state => state.kodenames.get('spymaster'));
+  const { word, color, flipped } = useSelector(state => state.kodenames.get('cards')[props.row][props.col]);
+  const spymaster = useSelector(state => state.kodenames.get('spymaster'));
 
-    const cardClasses = classNames(
-        'card__cell',
-        color,
-        { 'flipped': flipped, 'spymaster': spymaster }
-    )
+  const cardClasses = classNames(
+    'card__cell',
+    color,
+    { 'flipped': flipped, 'spymaster': spymaster }
+  );
 
-    const onClick = () => {
-        if(!flipped) {
-            dispatch(flipCard(props.row, props.col));
-        }
+  const onClick = () => {
+    if(!flipped) {
+      dispatch(flipCard(props.row, props.col));
     }
+  };
 
-    return (
-        <td className={cardClasses} onClick={onClick}>{word}</td>
-    );
+  return (
+    <td className={cardClasses} onClick={onClick}>{word}</td>
+  );
 
 }
 
 Card.propTypes = {
-    row: PropTypes.number.isRequired,
-    col: PropTypes.number.isRequired
-}
+  row: PropTypes.number.isRequired,
+  col: PropTypes.number.isRequired
+};
 
 export default Card;
