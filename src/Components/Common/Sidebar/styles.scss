@@ -1,0 +1,20 @@
+.sidebar__wrap {
+    padding: 80px;
+  
+    @media (min-width: 1000px) {
+      position: fixed;
+      box-sizing: border-box;
+      width: 40%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
+  
+    @media (max-width: 1000px) {
+      min-height: 500px;
+    }
+  
+    @media (max-width: 450px) {
+      padding: 40px;
+    }
+  }

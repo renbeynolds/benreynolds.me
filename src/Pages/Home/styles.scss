@@ -1,42 +1,5 @@
 @import '../../index.scss';
 
-.home__sidebar {
-  padding: 80px;
-
-  @media (min-width: 1000px) {
-    position: fixed;
-    box-sizing: border-box;
-    width: 40%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-  }
-
-  @media (max-width: 1000px) {
-    min-height: 500px;
-  }
-
-  @media (max-width: 450px) {
-    padding: 40px;
-  }
-}
-
-.home__panel-wrap {
-  height: 100%;
-
-  @media (min-width: 1000px) {
-    margin-left: 40%;
-    width: 60%;
-  }
-
-  @media (max-width: 1000px) {
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 500px;
-  }
-}
-
 .home__panel {
   height: 900px;
 }

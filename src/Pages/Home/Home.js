@@ -5,14 +5,16 @@ import Instagram from '../../Assets/Icons/instagram.svg';
 import Linkedin from '../../Assets/Icons/linkedin.svg';
 import Spotify from '../../Assets/Icons/spotify.svg';
 import Portrait from '../../Assets/portrait.jpg';
+import { Content } from '../../Components/Common/Content';
 import { Page } from '../../Components/Common/Page';
+import { Sidebar } from '../../Components/Common/Sidebar';
 import './styles.scss';
 
 function Home() {
 
   return (
     <Page>
-      <div className='home__sidebar center-vertical'>
+      <Sidebar>
         <div className='home__sidebar-portrait-wrap center-horizontal'>
           <img
             className='home__sidebar-portrait'
@@ -35,8 +37,8 @@ function Home() {
           <a href='https://www.instagram.com/ben_reynolds2/'><img src={Instagram} alt='Instagram' /></a>
           <a href='https://open.spotify.com/user/1296908115?si=l_U1w8HDRl6vjd0afGrM4A'><img src={Spotify} alt='Spotify' /></a>
         </div>
-      </div>
-      <div className='home__panel-wrap'>
+      </Sidebar>
+      <Content>        
         <div className='home__panel center-vertical'>
           <div className='center-horizontal'>
             <Link to='/kodenames'><div className='home__panel-title'>Kodenames</div></Link>
@@ -55,7 +57,7 @@ function Home() {
         </div>
         <div className='home__panel'>
         </div>
-      </div>
+      </Content>
     </Page>
   );
 
