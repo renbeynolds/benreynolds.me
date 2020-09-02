@@ -5,7 +5,7 @@ import './styles.scss';
 function Sidebar(props) {
 
     return (
-        <div className={`sidebar__wrap center-vertical ${props.className}`}>
+        <div className='sidebar__wrap center-vertical'>
             {props.children}
         </div>
     );
@@ -16,12 +16,7 @@ Sidebar.propTypes = {
     children: PropTypes.oneOfType([
         PropTypes.element,
         PropTypes.arrayOf(PropTypes.element)
-    ]).isRequired,
-    className: PropTypes.string
-};
-
-Sidebar.defaultProps = {
-    className: ''
+    ]).isRequired
 };
 
 export default Sidebar;
