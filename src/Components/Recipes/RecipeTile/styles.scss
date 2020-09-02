@@ -1,29 +1,30 @@
 .recipetile__wrap {
-    border: 1px solid #dddddd;
-    display: inline-block;
-    margin: 10px;
-    width: 250px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  margin: 10px;
+  width: 250px;
 }
 
 .recipetile__img-wrap {
-    height: 250px;
-    padding: 5px;
+  height: 250px;
+  padding: 5px;
 }
+
 .recipetile__img-wrap > img {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .recipetile__title {
-    font-size: 17px;
-    word-wrap: break-word;
-    color: #222222;
-    padding: 5px;
+  font-size: 17px;
+  word-wrap: break-word;
+  color: #222;
+  padding: 5px;
 }
 
 .recipetile__description {
-    height: 50px;
-    padding: 5px;
-    color: #555555;
-    font-size: 14px;
+  height: 50px;
+  padding: 5px;
+  color: #555;
+  font-size: 14px;
 }

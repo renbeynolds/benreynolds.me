@@ -8,19 +8,19 @@ import './styles.scss';
 
 function Recipes() {
 
-  return (
-    <Page>
-      <Sidebar className='recipes__sidebar'>
-      </Sidebar>
-      <Content>
-        <RecipeTile
-          title='Corn Casserole'
-          description='A Thanksgiving favorite'
-          imgSrc={CornCasserole}
-        />
-      </Content>
-    </Page>
-  );
+    return (
+        <Page>
+            <Sidebar className='recipes__sidebar'>
+            </Sidebar>
+            <Content>
+                <RecipeTile
+                    title='Corn Casserole'
+                    description='A Thanksgiving favorite'
+                    imgSrc={CornCasserole}
+                />
+            </Content>
+        </Page>
+    );
 
 }
 

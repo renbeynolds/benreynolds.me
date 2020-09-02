@@ -12,54 +12,54 @@ import './styles.scss';
 
 function Home() {
 
-  return (
-    <Page>
-      <Sidebar>
-        <div className='home__sidebar-portrait-wrap center-horizontal'>
-          <img
-            className='home__sidebar-portrait'
-            src={Portrait}
-            alt='portrait'
-          />
-        </div>
-        <div className='home__sidebar-title center-horizontal'>
-          Engineer.<br/>
-          Husband.<br/>
-          Christian<br/>
-          & Friend.
-        </div>
-        <div className='home__sidebar-intro center-horizontal'>
-          Software engineer at F9 Teams supporting the Air Force's Kessel Run program. Happily married to my incredible wife Veronika. Striving to live a faithful and full life.
-        </div>
-        <div className='home__sidebar-social-links center-horizontal'>
-          <a href='https://www.linkedin.com/in/renbeynolds/'><img src={Linkedin} alt='Linkedin' /></a>
-          <a href='https://github.com/renbeynolds'><img src={GitHub} alt='GitHub' /></a>
-          <a href='https://www.instagram.com/ben_reynolds2/'><img src={Instagram} alt='Instagram' /></a>
-          <a href='https://open.spotify.com/user/1296908115?si=l_U1w8HDRl6vjd0afGrM4A'><img src={Spotify} alt='Spotify' /></a>
-        </div>
-      </Sidebar>
-      <Content>        
-        <div className='home__panel center-vertical'>
-          <div className='center-horizontal'>
-            <Link to='/kodenames'><div className='home__panel-title'>Kodenames</div></Link>
-          </div>
-          <div className='center-horizontal'>
-            <div className='home__panel-subtitle'>Word association game where two teams compete to outwit one another with one-word clues.</div>
-          </div>
-        </div>
-        <div className='home__panel center-vertical'>
-          <div className='center-horizontal'>
-            <Link to='/recipes'><div className='home__panel-title'>Recipes</div></Link>
-          </div>
-          <div className='center-horizontal'>
-            <div className='home__panel-subtitle'>A collection of all of our favorite recipes.</div>
-          </div>
-        </div>
-        <div className='home__panel'>
-        </div>
-      </Content>
-    </Page>
-  );
+    return (
+        <Page>
+            <Sidebar>
+                <div className='home__sidebar-portrait-wrap center-horizontal'>
+                    <img
+                        className='home__sidebar-portrait'
+                        src={Portrait}
+                        alt='portrait'
+                    />
+                </div>
+                <div className='home__sidebar-title center-horizontal'>
+                    Engineer.<br/>
+                    Husband.<br/>
+                    Christian<br/>
+                    & Friend.
+                </div>
+                <div className='home__sidebar-intro center-horizontal'>
+                    Software engineer at F9 Teams supporting the Air Force&apos;s Kessel Run program. Happily married to my incredible wife Veronika. Striving to live a faithful and full life.
+                </div>
+                <div className='home__sidebar-social-links center-horizontal'>
+                    <a href='https://www.linkedin.com/in/renbeynolds/'><img src={Linkedin} alt='Linkedin' /></a>
+                    <a href='https://github.com/renbeynolds'><img src={GitHub} alt='GitHub' /></a>
+                    <a href='https://www.instagram.com/ben_reynolds2/'><img src={Instagram} alt='Instagram' /></a>
+                    <a href='https://open.spotify.com/user/1296908115?si=l_U1w8HDRl6vjd0afGrM4A'><img src={Spotify} alt='Spotify' /></a>
+                </div>
+            </Sidebar>
+            <Content>
+                <div className='home__panel center-vertical'>
+                    <div className='center-horizontal'>
+                        <Link to='/kodenames'><div className='home__panel-title'>Kodenames</div></Link>
+                    </div>
+                    <div className='center-horizontal'>
+                        <div className='home__panel-subtitle'>Word association game where two teams compete to outwit one another with one-word clues.</div>
+                    </div>
+                </div>
+                <div className='home__panel center-vertical'>
+                    <div className='center-horizontal'>
+                        <Link to='/recipes'><div className='home__panel-title'>Recipes</div></Link>
+                    </div>
+                    <div className='center-horizontal'>
+                        <div className='home__panel-subtitle'>A collection of all of our favorite recipes.</div>
+                    </div>
+                </div>
+                <div className='home__panel'>
+                </div>
+            </Content>
+        </Page>
+    );
 
 }
 

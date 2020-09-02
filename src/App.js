@@ -7,23 +7,23 @@ import { Recipes } from './Pages/Recipes';
 import store from './Redux/store';
 
 function App() {
-  return (
-    <Provider store={store}>
-      <Router>
-        <Switch>
-          <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route exact path='/kodenames'>
-            <Kodenames />
-          </Route>
-          <Route exact path='/recipes'>
-            <Recipes />
-          </Route>
-        </Switch>
-      </Router>
-    </Provider>
-  );
+    return (
+        <Provider store={store}>
+            <Router>
+                <Switch>
+                    <Route exact path='/'>
+                        <Home />
+                    </Route>
+                    <Route exact path='/kodenames'>
+                        <Kodenames />
+                    </Route>
+                    <Route exact path='/recipes'>
+                        <Recipes />
+                    </Route>
+                </Switch>
+            </Router>
+        </Provider>
+    );
 }
 
 export default App;
