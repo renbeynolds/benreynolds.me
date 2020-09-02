@@ -1,0 +1,47 @@
+.drawer__menu-icon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.drawer__content {
+  z-index: 9999;
+  background-color: #ddd;
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  transition: left 0.25s ease;
+
+  &.open {
+    left: 0;
+  }
+
+  &.closed {
+    left: -300px;
+  }
+}
+
+.drawer__scrim {
+  z-index: 9998;
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: visibility 0s, background-color 0.25s linear;
+
+  &.open {
+    background-color: rgba(0, 0, 0, 0.6);
+    visibility: visible;
+  }
+
+  &.closed {
+    background-color: transparent;
+    visibility: hidden;
+  }
+}

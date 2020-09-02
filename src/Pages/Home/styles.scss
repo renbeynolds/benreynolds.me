@@ -54,6 +54,7 @@
   padding: 10px;
   border: 2px solid black;
   cursor: pointer;
+  transition: background-color 0.15s ease;
 }
 
 .home__panel-title:hover {
